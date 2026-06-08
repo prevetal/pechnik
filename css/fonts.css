@@ -1,0 +1,40 @@
+/*-----------
+    Fonts
+-----------*/
+@font-face
+{
+    font-family: 'Unbounded';
+    font-weight: 300;
+    font-style: normal;
+
+    font-display: swap;
+    src: url('../fonts/Unbounded-Light.woff2') format('woff2'),
+    url('../fonts/Unbounded-Light.woff') format('woff'),
+    url('../fonts/Unbounded-Light.ttf') format('truetype');
+}
+
+
+@font-face
+{
+    font-family: 'Unbounded';
+    font-weight: normal;
+    font-style: normal;
+
+    font-display: swap;
+    src: url('../fonts/Unbounded-Regular.woff2') format('woff2'),
+    url('../fonts/Unbounded-Regular.woff') format('woff'),
+    url('../fonts/Unbounded-Regular.ttf') format('truetype');
+}
+
+
+@font-face
+{
+    font-family: 'Belcanto Modern';
+    font-weight: normal;
+    font-style: normal;
+
+    font-display: swap;
+    src: url('../fonts/belcanto-modern.woff2') format('woff2'),
+    url('../fonts/belcanto-modern.woff') format('woff'),
+    url('../fonts/belcanto-modern.ttf') format('truetype');
+}

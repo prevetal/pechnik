@@ -1,0 +1,483 @@
+@media print,
+(max-width: 1439px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size_title_l: 100px;
+        --font_size_title: 68px;
+        --font_size_title_s: 36px;
+        --font_size_title_xs: 26px;
+        --outside_gap: 100px;
+    }
+
+
+
+    /*---------------
+        Accordion
+    ---------------*/
+    .accordion
+    {
+        gap: 4px;
+
+
+        .accordion_item
+        {
+            &:before
+            {
+                height: 120px;
+            }
+
+
+            .head
+            {
+                padding: var(--inner_gap_xl);
+
+
+                .title
+                {
+                    font-size: var(--font_size_title_xs);
+                }
+            }
+
+
+            .data
+            {
+                padding-block: 2px var(--inner_gap_xl);
+                padding-inline: var(--inner_gap_xl);
+
+                font-size: var(--font_size);
+            }
+        }
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form
+    {
+        --form_input_height: 48px;
+
+
+        .submit_btn
+        {
+            height: 88px;
+        }
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header
+    {
+        padding-block: var(--block_padding_l);
+
+
+        .phone
+        {
+            font-size: var(--font_size_xxl);
+        }
+
+
+        .mob_btn
+        {
+            .icon
+            {
+                width: 48px;
+            }
+        }
+
+
+        .menu_modal
+        {
+            left: calc(anchor(right) - 448px);
+
+            width: 448px;
+            margin-block: var(--inner_gap_xl) 0;
+            padding: var(--block_padding);
+
+            border-radius: 20px;
+            box-shadow: 3px 2px 24px 0 rgba(0, 0, 0, .12);
+
+
+            & > * + *
+            {
+                margin-top: var(--block_padding);
+            }
+
+
+            .item
+            {
+                .label
+                {
+                    margin-bottom: var(--inner_gap);
+                }
+
+
+                .phone
+                {
+                    font-size: var(--font_size_xxl);
+                }
+
+
+                .email
+                {
+                    margin-top: 4px;
+                }
+            }
+
+
+            .btn
+            {
+                height: 88px;
+            }
+        }
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section
+    {
+        .cont
+        {
+            padding-block: 148px 48px;
+        }
+
+
+        .title
+        {
+            padding-left: 160px;
+
+
+            span:nth-child(2)
+            {
+                margin-left: 100px;
+            }
+
+
+            span:nth-child(3)
+            {
+                margin-left: 160px;
+            }
+        }
+
+
+        .sub_title
+        {
+            max-width: calc(100% - 260px);
+            margin-top: var(--block_padding_l);
+            margin-left: 260px;
+            padding-bottom: var(--block_padding);
+        }
+
+
+        .desc
+        {
+            max-width: calc(100% - 260px);
+            margin-top: var(--block_padding);
+            margin-left: 260px;
+        }
+
+
+        .pluses
+        {
+            max-width: calc(100% - 260px);
+            margin-top: var(--block_padding);
+            margin-left: 260px;
+
+
+            .item
+            {
+                .icon2
+                {
+                    width: 192px;
+                    height: 28px;
+                }
+            }
+        }
+
+
+
+        .image
+        {
+            margin-left: -868px;
+        }
+    }
+
+
+
+    /*----------------
+        About info
+    ----------------*/
+    .about_info
+    {
+        padding-block: 120px 100px;
+
+
+        .data
+        {
+            width: 568px;
+        }
+
+
+        .desc
+        {
+            margin-top: var(--block_padding_l);
+        }
+
+
+        .image
+        {
+            margin-right: -640px;
+
+
+            .photo
+            {
+                width: 680px;
+                height: 688px;
+            }
+        }
+    }
+
+
+
+    /*--------------
+        Services
+    --------------*/
+    .services
+    {
+        .service
+        {
+            .corner
+            {
+                top: var(--block_padding);
+                left: var(--block_padding);
+
+                width: 88px;
+            }
+
+
+            .info
+            {
+                gap: var(--inner_gap_l);
+
+                padding: var(--block_padding);
+
+
+                .name,
+                .desc
+                {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+
+
+    /*-----------
+        Steps
+    -----------*/
+    .steps
+    {
+        .grid_row
+        {
+            --gap_x: 80px;
+            --gap_y: var(--block_padding_l);
+        }
+
+
+        .item
+        {
+            &:before
+            {
+                top: 33px;
+                left: 80px;
+
+                width: calc(100% - 80px + var(--gap_x) - var(--inner_gap));
+            }
+
+
+            &:after
+            {
+                top: var(--inner_gap_l);
+                right: calc(var(--inner_gap) * -1);
+
+                width: 80px;
+                height: 40px;
+
+                background-size: 40px 40px;
+            }
+
+
+            &:last-child
+            {
+                &:before
+                {
+                    width: calc(100% - 80px);
+                }
+            }
+
+
+            .number
+            {
+                min-width: 80px;
+                margin-bottom: 4px;
+            }
+        }
+    }
+
+
+
+    /*-----------
+        Cases
+    -----------*/
+    .cases
+    {
+        margin-bottom: 80px;
+
+
+        .head
+        {
+            .avito_widget
+            {
+                gap: var(--inner_gap);
+
+
+                .val
+                {
+                    font-size: 44px;
+                }
+            }
+        }
+
+
+        .slogan
+        {
+            margin-top: var(--cont_padding_double);
+            padding-inline: var(--inner_gap_xxs);
+        }
+    }
+
+
+
+    /*---------
+        FAQ
+    ---------*/
+    .FAQ
+    {
+        padding-block: 100px 80px;
+
+
+        .accordion_wrap
+        {
+            .corder_top_right,
+            .corder_bottom_left
+            {
+                width: 88px;
+            }
+        }
+    }
+
+
+
+    /*------------------
+        Action block
+    ------------------*/
+    .action_block
+    {
+        padding-block: 80px 0;
+
+
+        .info
+        {
+            width: 480px;
+
+
+            .title
+            {
+                font-size: 56px;
+            }
+
+
+            .btn
+            {
+                height: 88px;
+                margin-top: var(--inner_gap_l);
+            }
+        }
+
+
+        .form
+        {
+            width: calc(100% - 480px - 100px);
+        }
+
+
+        .contacts
+        {
+            margin-top: 68px;
+            padding-top: 68px;
+
+
+            .sep
+            {
+                height: 148px;
+            }
+
+
+            .item
+            {
+                .label
+                {
+                    margin-bottom: var(--inner_gap_l);
+                }
+
+
+                .location,
+                .phone,
+                .email,
+                .socials
+                {
+                    width: 260px;
+                }
+
+
+                .phone
+                {
+                    font-size: var(--font_size_title_xs);
+                }
+
+
+                .email
+                {
+                    margin-top: 4px;
+                }
+
+
+                .socials
+                {
+                    a
+                    {
+                        gap: var(--inner_gap_xxs);
+                    }
+                }
+            }
+        }
+
+
+        .slogan
+        {
+            padding-inline: var(--inner_gap_xxs);
+        }
+    }
+}

@@ -1,0 +1,379 @@
+@media print,
+(max-width: 1279px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --custom_scroll_width: 5px;
+        --custom_scroll_height: 5px;
+        --font_size_title_l: 80px;
+        --font_size_title: 56px;
+        --font_size_title_s: 30px;
+        --font_size_title_xs: 22px;
+        --block_head_offset: 32px;
+        --block_padding_l: 32px;
+        --block_padding: 24px;
+        --outside_gap: 80px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form
+    {
+        .submit_btn
+        {
+            height: 80px;
+        }
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header
+    {
+        .phone
+        {
+            font-size: var(--font_size_xl);
+        }
+
+
+        .mob_btn
+        {
+            .icon
+            {
+                width: 44px;
+            }
+        }
+
+
+        .menu_modal
+        {
+            left: calc(anchor(right) - 384px);
+
+            width: 384px;
+
+
+            .item
+            {
+                .phone
+                {
+                    font-size: var(--font_size_xl);
+                }
+            }
+
+
+            .btn
+            {
+                height: 80px;
+            }
+        }
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section
+    {
+        .cont
+        {
+            padding-block: 140px 48px;
+        }
+
+
+        .title
+        {
+            span:nth-child(3)
+            {
+                margin-left: 180px;
+            }
+        }
+
+
+        .sub_title
+        {
+            max-width: calc(100% - 200px);
+            margin-left: 200px;
+        }
+
+
+        .desc
+        {
+            max-width: calc(100% - 200px);
+            margin-left: 200px;
+        }
+
+
+        .pluses
+        {
+            max-width: calc(100% - 200px);
+            margin-left: 200px;
+
+
+            .item
+            {
+                span
+                {
+                    padding-inline: 0;
+                }
+
+
+                .icon2
+                {
+                    width: 179px;
+                    height: 24px;
+                }
+            }
+        }
+
+
+        .image
+        {
+            margin-left: -712px;
+        }
+    }
+
+
+
+    /*----------------
+        About info
+    ----------------*/
+    .about_info
+    {
+        padding-block: 100px 80px;
+
+
+        .data
+        {
+            width: 500px;
+        }
+
+
+        .image
+        {
+            margin-right: -608px;
+
+
+            &:before
+            {
+                width: 340px;
+            }
+
+
+            &:after
+            {
+                right: 11.733%;
+
+                width: 364px;
+                height: 500px;
+            }
+
+
+            .photo
+            {
+                width: 580px;
+                height: 587px;
+            }
+        }
+    }
+
+
+
+    /*--------------
+        Services
+    --------------*/
+    .services
+    {
+        .service
+        {
+            .corner
+            {
+                width: 60px;
+            }
+
+
+            .info
+            {
+                gap: var(--inner_gap_s);
+
+
+                .desc
+                {
+                    font-size: var(--font_size_xs);
+                }
+            }
+        }
+    }
+
+
+
+    /*-----------
+        Steps
+    -----------*/
+    .steps
+    {
+        .grid_row
+        {
+            --gap_x: 68px;
+        }
+
+
+        .item
+        {
+            gap: var(--inner_gap_s);
+
+
+            &:before
+            {
+                top: 24px;
+                left: 68px;
+
+                width: calc(100% - 68px + var(--gap_x) - var(--inner_gap));
+            }
+
+
+            &:after
+            {
+                top: var(--inner_gap);
+
+                width: 72px;
+                height: 32px;
+
+                background-size: 32px 32px;
+            }
+
+
+            &:last-child
+            {
+                &:before
+                {
+                    width: calc(100% - 68px);
+                }
+            }
+
+
+            .number
+            {
+                min-width: 68px;
+            }
+
+
+            .name
+            {
+                font-size: var(--font_size_xl);
+            }
+        }
+    }
+
+
+
+    /*-----------
+        Cases
+    -----------*/
+    .cases
+    {
+        margin-bottom: 68px;
+
+
+        .head
+        {
+            .val
+            {
+                font-size: 40px;
+            }
+        }
+
+
+        .swiper
+        {
+            &:not(.swiper-initialized)
+            {
+                .swiper-wrapper
+                {
+                    gap: var(--spaceBetween-1024);
+                }
+
+
+                .swiper-slide
+                {
+                    width: calc(100% / var(--slidesPerView-1024) - var(--spaceBetween-1024));
+                }
+            }
+        }
+    }
+
+
+
+    /*---------
+        FAQ
+    ---------*/
+    .FAQ
+    {
+        padding-block: 80px 68px;
+
+
+        .accordion_wrap
+        {
+            .corder_top_right,
+            .corder_bottom_left
+            {
+                display: none;
+            }
+        }
+    }
+
+
+
+    /*------------------
+        Action block
+    ------------------*/
+    .action_block
+    {
+        padding-block: 68px 0;
+
+
+        .info
+        {
+            width: 440px;
+
+
+            .title
+            {
+                font-size: 52px;
+            }
+
+
+            .btn
+            {
+                height: 80px;
+            }
+        }
+
+
+        .form
+        {
+            width: calc(100% - 440px - 80px);
+        }
+
+
+        .contacts
+        {
+            margin-top: 60px;
+            padding-top: 60px;
+
+
+            .sep
+            {
+                height: 140px;
+            }
+        }
+    }
+}
